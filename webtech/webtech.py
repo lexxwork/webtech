@@ -164,6 +164,13 @@ class WebTech():
 
         return self.perform(target)
 
+    def start_from_data(self, url, data, timeout=None):
+        timeout = timeout or self.timeout
+        target = Target()
+        target.parse_http_response(data)
+        target.data['url'] = url
+        return self.perform(target)
+
     def start_from_json(self, exchange):
         """
         Start webtech on a single target from a HTTP request-response exchange as JSON serialized string
