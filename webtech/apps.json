@@ -11572,6 +11572,7 @@
       ],
       "html": [
         "<!-- WooCommerce",
+        "<style[^>]*?id=['\"]woocommerce-inline-inline-css",
         "<link rel='[^']+' id='woocommerce-(?:layout|smallscreen|general)-css'  href='https?://[^/]+/wp-content/plugins/woocommerce/assets/css/woocommerce(?:-layout|-smallscreen)?\\.css?ver=([\\d.]+)'\\;version:\\1"
       ],
       "icon": "WooCommerce.png",
